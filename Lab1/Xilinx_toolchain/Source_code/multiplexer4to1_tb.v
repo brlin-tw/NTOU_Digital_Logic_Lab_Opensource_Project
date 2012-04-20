@@ -1,6 +1,6 @@
 `timescale 1ns / 100ps
 `include "Source_code/multiplexer4to1/multiplexer4to1.v"
-module multiplexer4to1test;
+module multiplexer4to1test();
   reg [1:0] s;
   reg [3:0] i;
   wire out;
