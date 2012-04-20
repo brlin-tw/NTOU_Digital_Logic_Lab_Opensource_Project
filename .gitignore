@@ -240,7 +240,13 @@ isim.tmp_save/
 *_pad.txt
 *_summary.xml
 *_usage.xml
+*.gise
+*.prj
+*.ptwx
+*_bitgen.xwbt
 
+webtalk.log
+usage_statistics_webtalk.html
 device_usage_statistics.html
 isim.hdlsourcefiles
 fuse.log
