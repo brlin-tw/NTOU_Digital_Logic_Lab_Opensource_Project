@@ -223,7 +223,6 @@ planAhead*/
 *.ise_.lock
 *.bgn
 *.bit
-*.dkp
 *.drc
 *.lfp
 *.ncd
