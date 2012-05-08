@@ -7,10 +7,11 @@
 	`include "Source_code/encoder16to4/encoder16to4.v"
 	`include "Source_code/sevenSegmentDisplayDecoder/sevenSegmentDisplayDecoder.v"
 
-	module encoder16to4to7segdisplay(display, i);
+	module encoder16to4to7segdisplay(display, code, i);
 		input [15:0]i;
 		output [6:0]display;
-		wire [3:0]code;
+		output [3:0]code;
+		//wire [3:0]code;
 		
 		encoder16to4 enc16to4(code, i);
 		sevenSegmentDisplayDecoder sevendisplay(display, code);
