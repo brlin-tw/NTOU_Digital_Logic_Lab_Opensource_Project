@@ -258,3 +258,6 @@ webtalk_pn.xml
 xilinxsim.ini
 planAhead.jou
 
+##bomstrip備份檔案
+*.bom
+
