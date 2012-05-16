@@ -5,7 +5,7 @@
 `include "Source_code/dffSyncSid.v"
 
 //時脈頻率
-`define CLOCK_FREQ 50
+`define CLOCK_FREQ 10
 
 module Lab9_tb;
   reg Clk, ClrN;
@@ -31,9 +31,9 @@ module Lab9_tb;
 
       //模擬
       Clk = 0;
-      ClrN = 1;
-      #100
       ClrN = 0;
+      #100
+      ClrN = 1;
       #500
       $finish;
     end
