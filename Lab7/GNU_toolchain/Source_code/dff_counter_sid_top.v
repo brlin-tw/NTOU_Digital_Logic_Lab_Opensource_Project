@@ -1,4 +1,4 @@
-/* 模組名稱：Lab7 display
+/* 模組名稱：Lab7 top module
    著作權宣告：copyright 2012 林博仁(pika1021@gmail.com)
    */
 `timescale 1ns / 100ps
