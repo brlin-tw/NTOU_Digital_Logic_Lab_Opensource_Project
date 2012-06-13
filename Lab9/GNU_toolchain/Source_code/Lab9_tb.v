@@ -27,14 +27,14 @@ module Lab9_tb;
 	    //初始化
       $dumpfile ("Simulation/Lab9_tb.vcd");
       $dumpvars;
-      $monitor($time, " Clk=%b, ClrN=%b ==> next=%4b", Clk, ClrN, next);
+      $monitor($time, " Clk=%b, ClrN=%b ==> next=%4x", Clk, ClrN, next);
 
       //模擬
       Clk = 0;
       ClrN = 0;
       #100
       ClrN = 1;
-      #500
+      #200
       $finish;
     end
 endmodule

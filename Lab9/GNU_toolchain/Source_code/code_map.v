@@ -7,15 +7,13 @@ module code_map(next, present);
   input [3:0]present;
   output [3:0]next;
 
-
   assign next[3] = present[1] |
-  ~present[3] & ~present[1] & ~present[0];
+                  ~present[3] & ~present[1] & ~present[0];
   assign next[2] = present[3] & ~present[2] & ~present[1] |
-  ~present[3] & present[2];
+                  ~present[3] & present[2];
   assign next[1] = present[1] & ~present[0] |
-    ~present[1] & ~present[3] & present[2] |
-    ~present[3] & ~present[1]&~present[0];
+                  ~present[1] & ~present[3] & present[2] |
+                  ~present[3] & ~present[1] & ~present[0];
   assign next[0] = present[3] & ~present[2] |
-  present[2] & ~present[1];
-
+                  present[2] & ~present[1];
 endmodule
