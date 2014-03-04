@@ -1,5 +1,6 @@
 //2對1多工器
-//作者 | Author
+//作者
+//Author
 //  林博仁(pika1021@gmail.com)
 `ifndef MULTIPLEXER2TO1_V_INCLUDED
 	`define MULTIPLEXER2TO1_V_INCLUDED
