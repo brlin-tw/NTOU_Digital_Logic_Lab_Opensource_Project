@@ -4,8 +4,8 @@
 `ifndef ENC16TO4TO7SEGDISPLAY
 	`define ENC16TO4TO7SEGDISPLAY
 	`timescale 1ns / 100ps
-	`include "Source_code/encoder16to4/encoder16to4.v"
-	`include "Source_code/sevenSegmentDisplayDecoder/sevenSegmentDisplayDecoder.v"
+	`include "encoder16to4/encoder16to4.v"
+	`include "sevenSegmentDisplayDecoder/sevenSegmentDisplayDecoder.v"
 
 	module encoder16to4to7segdisplay(display, in);
 		input [15:0]in;
